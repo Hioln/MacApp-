@@ -27,7 +27,12 @@ MacOS High Siera 10.13.3
 | Dicunifier          | 转换词典到系统自带词典，词典在[这里](http://download.huzheng.org/zh_CN/)下，拖入APP中全自动安装 |
 | Aria2GUI				| Aria2的图形模式，虽然有一点传输速度现实不是特别及时，但是能很好的短点续连，非常值得推荐，基本可替代Windos下的IDM，在[这里](https://github.com/yangshun1029/aria2gui)下载 |
 | FinalSHell			|非常好用的一个远程连接用的APP，需要JAVA，安装完JAVA，去[官网](http://www.hostbuf.com/t/988.html)用终端一个指令即可完成安装。ssh连接海外VPS，可以加速连接，同时自带查询服务器当前的系统性能非常好用。特此推荐。|
-| 	||
+| WallpaperWizard2 |Paw的出品，是CleanMyMac的另一个产品，售价在100以内，里面提供的都是高质量的wallpaper，是真的在换壁纸，而不是推了app就没了。重点是里面的照片非常的高质量。|
+| Hocus Focus | Mac使用者经常会忘了关app，然后背景有一堆app简直闹心，这个就是可以设置一个固定的时间，到了时间会自动隐到后台。可以设置不同的模式对应不同的时间。 |
+| DaisyDisk 4.4 | Mac下一款系统的清理软件，可以了解磁盘的状况，颜值非常高～ |
+| Amphetamine | Mac下的免费的防休眠的app |
+|Yoink	| Mac下拖拽的暂存处，之前都是存桌面上最后就乱七八糟的，这个很方便而且好看 |
+| Recents | [下载地址](recentsapp.com)将最近打开的文件整合在一起，超级好用～ |
 
 ### 网盘地址
 
@@ -56,5 +61,11 @@ E36B85CC 84991F19 7575D828 470A92AB
 —— END LICENSE ——
 ```
 
+### 问题解决
 
+###### Alfred每次启动提示权限
+
+```bash
+sudo codesign --force --deep --sign - "/Applications/Alfred 3.app/Contents/Frameworks/Alfred Framework.framework/Versions/A/Alfred Framework"
+```
 
